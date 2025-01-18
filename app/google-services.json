@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "684234071698",
+    "project_id": "fcmnotification-e5e87",
+    "storage_bucket": "fcmnotification-e5e87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684234071698:android:55b0ee87bc36bd9593904b",
+        "android_client_info": {
+          "package_name": "com.bibekgupta.coordinatorpatternwitheverything"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJImBUB1TJyLRC0WZoqltFPIAqCkc7tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684234071698:android:68c1e1ac67f5912c93904b",
+        "android_client_info": {
+          "package_name": "com.bibekgupta.fcmnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJImBUB1TJyLRC0WZoqltFPIAqCkc7tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
