@@ -56,7 +56,7 @@ fun BottomNavigationBar(coordinator: AppCoordinator, navController: NavControlle
     NavigationBar {
         bottomNavItems.forEach { item ->
             NavigationBarItem(
-                selected = currentRoute == item.route,
+                selected = currentRoute?.startsWith(item.route) == true,
                 onClick = { coordinator.navigateTo(item.route) },
                 icon = { Icon(item.icon, contentDescription = item.contentDescription) }
             )

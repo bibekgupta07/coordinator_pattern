@@ -14,6 +14,7 @@ import com.bibekgupta.coordinatorpatternwitheverything.ui.main.profile.ProfileSc
 import com.bibekgupta.coordinatorpatternwitheverything.ui.main.search.SearchScreen
 import com.bibekgupta.coordinatorpatternwitheverything.ui.splash.SplashScreen
 import androidx.navigation.navigation
+import com.bibekgupta.coordinatorpatternwitheverything.ui.main.home.HomeDetailScreen
 
 
 @Composable
@@ -51,6 +52,15 @@ fun NavGraph(coordinator: AppCoordinator) {
                     HomeScreen(coordinator)
                 }
             }
+            // Detail Screen, nested under Home
+            composable("${NavRoutes.HOME}/{itemId}") { backStackEntry ->
+                val itemId = backStackEntry.arguments?.getString("itemId")
+                MainScreenWithBottomBar(coordinator) {
+                    // Pass the itemId to the DetailScreen
+                    HomeDetailScreen(coordinator, itemId)
+                }
+            }
+
             // Search Screen
             composable(NavRoutes.SEARCH) {
                 MainScreenWithBottomBar(coordinator) {
